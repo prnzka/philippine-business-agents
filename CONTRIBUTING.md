@@ -42,20 +42,22 @@ error exists.
 
 ## Agents that would be welcome
 
-Sectors not yet covered:
+The library is still growing. Sectors not yet covered, roughly in order of how many Philippine
+businesses they would serve:
 
-- Healthcare practices — clinics, laboratories, dental, DOH licensing and PhilHealth accreditation
-- Education — private schools, tutorial and review centres, DepEd/CHED/TESDA permits
-- Security agencies — PNP SOSIA licensing, the specific labour regime
-- Recruitment and manpower — DMW/DOLE licensing, where penalties are severe
-- Mining and quarrying — MGB permits
-- Energy and renewables — DOE, the Renewable Energy Act incentives
-- Insurance and pre-need — Insurance Commission
-- Lending and financing companies — SEC secondary licence, BSP where applicable
-- Beauty, wellness and personal services
-- Printing, signage and creative services
-- Events and catering at scale
-- Pawnshops, money service businesses, remittance agents — BSP
+- **Mining and quarrying** — MGB permits, and the LGU-level quarrying that is far more common
+- **Telecoms, ISPs and cable** — NTC permits, and the small community ISP model
+- **Funeral and memorial services** — a large, regulated and entirely uncovered sector
+- **Pre-need plans** beyond distribution — the Pre-Need Code and the trust fund obligations
+- **Shipping, ports and freight forwarding** — MARINA, PPA, and customs brokerage as a practice
+- **Gaming, amusement and e-sports** — PAGCOR and LGU amusement regulation
+- **Private hospitals, dialysis and elder care** — DOH licensing at facility scale
+- **Broadcast and film production** — MTRCB, NTC, and production incentives
+- **Sports and entertainment management** — talent, events and the labour side
+- **Religious and non-profit organisations** — SEC non-stock registration, donee institution
+  status, and the tax treatment of donations
+- **Crypto and virtual asset services** beyond the BSP licensing summary
+- **Franchise brokerage and business brokering**
 
 Other useful work:
 
@@ -66,6 +68,9 @@ Other useful work:
   briefings, the policy summaries. The agent instructions stay in English; the output that reaches
   a worker or a store owner should be in their language.
 - **Worked examples** with real (anonymised) numbers.
+- **Testing agents against other models.** These are written to be model-agnostic, but they are
+  mostly exercised on one. If an agent behaves badly on a model you use — ignores the
+  verification section, drops the limits, over-asserts a figure — that is a useful issue to open.
 
 ## Style
 

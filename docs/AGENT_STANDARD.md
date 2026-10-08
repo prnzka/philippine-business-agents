@@ -2,6 +2,10 @@
 
 Every agent in this repo follows the same contract. If you contribute one, match this.
 
+Agents are **model-agnostic**: a YAML header of routing metadata, and a body that works as a
+system prompt in any assistant. Write the body so it stands alone — somebody will paste it into a
+tool you have never heard of.
+
 ## 1. File shape
 
 ```markdown
@@ -17,12 +21,21 @@ model: sonnet
 You are a <role> ...
 ```
 
+The header is metadata for tools that read it. Runtimes that do not read it ignore it, and a user
+pasting the agent into a chat assistant drops it entirely — so **no instruction may live in the
+header**. Everything the agent needs goes in the body.
+
 - `name` must equal the filename without `.md`.
-- `description` is a routing signal, not marketing copy. Name the concrete situations.
-- `tools` — grant the minimum. Most advisory agents need `Read, Write, Edit, WebSearch, WebFetch`.
-  Only agents that compute (payroll, tax, pricing) need `Bash`.
-- `model` — `sonnet` for most, `opus` for agents doing legal reasoning or multi-variable
-  optimisation, `haiku` for lookups.
+- `description` is a routing signal, not marketing copy. Name the concrete situations. This is the
+  field a router, a classifier or an orchestrating model reads to decide whether to route here.
+- `tools` — the capabilities the agent needs, named in a common convention. Grant the minimum.
+  Most advisory agents need `Read, Write, Edit, WebSearch, WebFetch`; only agents that compute
+  (payroll, tax, pricing, unit economics) need `Bash`. Tools that use different names map these
+  across; tools without a tool system ignore them.
+- `model` — a capability tier, not a vendor commitment. Use `haiku` for lookups, `sonnet` for most
+  agents, `opus` for agents doing legal reasoning or multi-variable optimisation. These names come
+  from one common convention; substitute the equivalent tier on whatever model you run. Keep the
+  three-tier vocabulary so the validator and the routing stay consistent across the repo.
 
 ## 2. Required body sections
 

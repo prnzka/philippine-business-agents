@@ -3,7 +3,7 @@
 
 Checks:
   - YAML frontmatter is present and `name` matches the filename
-  - `description`, `tools` and `model` are present, and `model` is a known value
+  - `description`, `tools` and `model` are present, and `model` is a known capability tier
   - the required body sections exist, including the two mandatory ones
   - every agent referenced in a "## Hand off to" section actually exists
 
@@ -29,6 +29,8 @@ REQUIRED_SECTIONS = [
     "## Limits",
 ]
 
+# Capability tiers, not a vendor commitment. See docs/AGENT_STANDARD.md -- the header is
+# metadata for tools that read it, and these names come from one common convention.
 KNOWN_MODELS = {"haiku", "sonnet", "opus"}
 
 
