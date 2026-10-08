@@ -2,7 +2,7 @@
 
 ## Where agent files go
 
-Claude Code reads subagents from two locations:
+Claude Code reads agents from two locations:
 
 | Location | Scope |
 | --- | --- |
@@ -15,8 +15,8 @@ are for browsing, not for installation. Copy the files out of them.
 ## Install everything
 
 ```bash
-git clone https://github.com/prnzka/philippine-business-subagents.git
-cd philippine-business-subagents
+git clone https://github.com/prnzka/philippine-business-agents.git
+cd philippine-business-agents
 
 # user-wide
 mkdir -p ~/.claude/agents
@@ -26,8 +26,8 @@ cp categories/*/*.md ~/.claude/agents/
 PowerShell:
 
 ```powershell
-git clone https://github.com/prnzka/philippine-business-subagents.git
-cd philippine-business-subagents
+git clone https://github.com/prnzka/philippine-business-agents.git
+cd philippine-business-agents
 New-Item -ItemType Directory -Force "$env:USERPROFILE\.claude\agents"
 Get-ChildItem categories -Recurse -Filter *.md | Copy-Item -Destination "$env:USERPROFILE\.claude\agents"
 ```

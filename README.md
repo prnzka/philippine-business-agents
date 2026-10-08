@@ -1,6 +1,6 @@
-# Philippine Business Subagents
+# Philippine Business Agents
 
-**71 production-ready Claude Code subagents for running a business in the Philippines.**
+**71 production-ready Claude Code agents for running a business in the Philippines.**
 
 Most AI business advice is written for a US company. It will tell a Filipino owner to form an
 LLC, file a 1099, and watch their Q4 sales — none of which exist here. What exists here is
@@ -34,15 +34,15 @@ Philippine rates and wage orders change mid-year.
 Copy the agents you want into your project's or user's agents directory:
 
 ```bash
-git clone https://github.com/prnzka/philippine-business-subagents.git
+git clone https://github.com/prnzka/philippine-business-agents.git
 
 # all of them, for your user account
 mkdir -p ~/.claude/agents
-cp philippine-business-subagents/categories/*/*.md ~/.claude/agents/
+cp philippine-business-agents/categories/*/*.md ~/.claude/agents/
 
 # or just the tax ones, for one project
 mkdir -p .claude/agents
-cp philippine-business-subagents/categories/01-tax-and-bir/*.md .claude/agents/
+cp philippine-business-agents/categories/01-tax-and-bir/*.md .claude/agents/
 ```
 
 Then ask in plain language — AI routes to the right agent from its `description`:
