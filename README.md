@@ -45,7 +45,7 @@ mkdir -p .claude/agents
 cp philippine-business-subagents/categories/01-tax-and-bir/*.md .claude/agents/
 ```
 
-Then ask in plain language — Claude routes to the right agent from its `description`:
+Then ask in plain language — AI routes to the right agent from its `description`:
 
 ```
 Gross ko last year 2.4M, freelance web design, konti lang expenses. 8% or graduated?
