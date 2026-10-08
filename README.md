@@ -13,9 +13,6 @@ Philippine business practice — citing the republic act, the BIR form, the agen
 threshold — and each one is built to **verify volatile figures before quoting them**, because
 Philippine rates and wage orders change mid-year.
 
-Inspired by [VoltAgent/awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents),
-which does this for software engineering.
-
 > **Not professional advice.** These agents prepare, model, draft and explain. A CPA signs
 > returns, a lawyer signs contracts, a licensed professional signs plans. Every agent says so in
 > its own `## Limits` section, and says it to the user too. See [DISCLAIMER.md](DISCLAIMER.md).
